@@ -2,7 +2,7 @@
   "name": "vscode-webview-react",
   "version": "0.1.0",
   "engines": {
-    "vscode": "^1.23.0"
+    "vscode": "^1.38.0"
   },
   "publisher": "rebornix",
   "activationEvents": [
@@ -19,10 +19,11 @@
     ]
   },
   "dependencies": {
+    "bootstrap": "^4.5.0",
     "react": "^16.3.2",
+    "react-bootstrap": "^1.2.2",
     "react-dom": "^16.3.2",
-    "terser": "3.16.0",
-    "vscode": "^1.1.17"
+    "terser": "3.16.0"
   },
   "resolutions": {
     "terser": "3.14.1"
@@ -42,7 +43,11 @@
     "@types/react-dom": "^16.0.5",
     "react-scripts": "^2.1.3",
     "rewire": "^4.0.1",
-    "typescript": "^3.3.1"
+    "typescript": "^3.3.1",
+    "azdata": "1.0.0",
+    "ts-loader": "^7.0.5",
+    "vscode": "1.1.37",
+    "vsce": "^1.77.0"
   },
   "browserslist": [
     ">0.2%",
