@@ -1,23 +1,30 @@
 import * as React from 'react';
-import {Button} from 'react-bootstrap';
-import Aux from '../hoc/Aux'
+import {ButtonGroup, Button} from 'react-bootstrap';
 
-export interface IAppProps {
+const sty = `.to{
+    display: 'block',
+    float: 'left',
+    height: '50px';
+    width: '100px';
+    margin-right: '5px';
+    text-align: 'center';
+    line-height: '50px';
+    text-decoration: 'none';
 }
+`
 
 const formButtons: React.FC = (props) => {
    return (
-       <Aux>
-          <Button variant="primary" size="lg" active>
-            Primary button
-         </Button>{' '}
-            <Button variant="primary" size="lg" active>
-            Secundary button
-            </Button>{' '}
-            <Button variant="primary" size="lg" active>
-                Third button
-            </Button>{' '}  
-       </Aux>
+       <div className="to">
+           <style>{sty}</style>
+           <ButtonGroup aria-label="Basic example">
+                <Button variant="secondary">Run</Button>
+                <Button variant="secondary">Runtime Command</Button>
+                <Button variant="secondary">Right</Button>
+           </ButtonGroup>       
+           <br/>
+           <br/>
+           </div>
    )
     }
 export default formButtons;

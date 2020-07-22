@@ -7,6 +7,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import FormRun from './components/RunForm/RunForm';
 import RunButtons from './components/RunButtons/RunButtons';
+import Tabs from './components/Tabs/Tabs';
+import TextInput from './components/TextInput/TextInput';
+
+import ListBox from './components/ListBoxes/ListBox';
 
 class App extends React.Component {
   public render() {
@@ -18,14 +22,25 @@ class App extends React.Component {
               </Col>
             </Row>
             <Row> 
-              <Col xs={3}>
+              <Col xs={4}>
               <FormRun />
               <RunButtons/>
               </Col>
+              <Col xs={8}>
+              <TextInput/>
+              <Col xs={4}>
+              <ListBox/>
+              <ListBox/>
+              </Col> 
+                   
+              </Col>
             </Row>
-
+              <Row>
+                <Col>
+                  <Tabs/>
+                </Col>
+              </Row>
           </Container>  
-
     );
   }
 }
