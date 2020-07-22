@@ -1,9 +1,11 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import  Logo from '../../Logo/Logo';
+import Aux from '../../hoc/Aux';
 
-const toolbar :React.FC = (props) =>{
-    return <Navbar bg="light" expand="lg">
+const toolbar: React.FC = (props) =>{
+    return( 
+    <Navbar bg="light" expand="lg">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
@@ -20,7 +22,7 @@ const toolbar :React.FC = (props) =>{
         </Nav>
         </Navbar.Collapse>
         </Navbar>
-
+    )
   };
 
 export default toolbar;
