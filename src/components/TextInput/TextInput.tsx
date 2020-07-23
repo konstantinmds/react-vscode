@@ -6,7 +6,7 @@ const textInput: React.FC = (props) => {
       
     <Form>
         <Form.Group controlId="exampleForm.ControlTextarea1">
-        <Form.Label>Example textarea</Form.Label>
+        <Form.Label style={{fontSize:10}}>Progress</Form.Label>
         <Form.Control as="textarea" rows={Number('3')} />
       </Form.Group>
     </Form>          )

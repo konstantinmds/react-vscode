@@ -1,10 +1,10 @@
 import * as React from 'react';
 import {Form} from 'react-bootstrap';
 
-const listBox: React.FC = (props) => {
+const listBoxRight: React.FC = (props) => {
    return (
-    <Form.Group controlId="exampleForm.ControlSelect2">
-    <Form.Label>Example multiple select</Form.Label>
+     <div>
+    <Form.Group controlId="exampleForm.ControlSelect2" style={{width:400, height:800}}>
     <Form.Control as="select" multiple>
       <option>1</option>
       <option>2</option>
@@ -13,6 +13,7 @@ const listBox: React.FC = (props) => {
       <option>5</option> 
     </Form.Control>
   </Form.Group>
+     </div>
    )
     }
-export default listBox;
+export default listBoxRight;

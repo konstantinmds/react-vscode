@@ -10,36 +10,28 @@ import RunButtons from './components/RunButtons/RunButtons';
 import Tabs from './components/Tabs/Tabs';
 import TextInput from './components/TextInput/TextInput';
 
-import ListBox from './components/ListBoxes/ListBox';
+import ListBoxes from './components/ListBoxes/ListBoxes';
 
 class App extends React.Component {
   public render() {
         return (
-          <Container> 
-            <Row> 
-              <Col xs={12}>
-              <Toolbar />
-              </Col>
-            </Row>
+          <Container fluid> 
+          <header><Toolbar /></header>
             <Row> 
               <Col xs={4}>
               <FormRun />
               <RunButtons/>
+              <br/>
+              <Tabs/>
               </Col>
               <Col xs={8}>
               <TextInput/>
-              <Col xs={4}>
-              <ListBox/>
-              <ListBox/>
-              </Col> 
-                   
-              </Col>
+              <Col xs={8}>
+              <ListBoxes/>
+              </Col>  
+              </Col>       
             </Row>
-              <Row>
-                <Col>
-                  <Tabs/>
-                </Col>
-              </Row>
+
           </Container>  
     );
   }

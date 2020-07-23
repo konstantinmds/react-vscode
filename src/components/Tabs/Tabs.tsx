@@ -5,7 +5,7 @@ const tabs: React.FC = (props) => {
     return (
         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
         <Row>
-            <Col sm={3}>
+            <Col sm={10}>
             <Nav variant="pills" className="flex-column">
                 <Nav.Item>
                 <Nav.Link eventKey="first">Packages</Nav.Link>

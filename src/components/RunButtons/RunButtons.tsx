@@ -15,13 +15,10 @@ const sty = `.to{
 
 const formButtons: React.FC = (props) => {
    return (
-       <div className="to">
-           <style>{sty}</style>
-           <ButtonGroup aria-label="Basic example">
-                <Button variant="secondary">Run</Button>
-                <Button variant="secondary">Runtime Command</Button>
-                <Button variant="secondary">Right</Button>
-           </ButtonGroup>       
+       <div style={{margin: 5, padding: 3}}>
+            <Button variant="secondary" style={{backgroundColor: 'blue', color: 'white', margin: 5}}>Schedule</Button>
+            <Button variant="secondary" style={{backgroundColor: 'blue', color: 'white', margin: 5}}>Runtime Command</Button>
+            <Button variant="primary" style={{backgroundColor: 'green', color: 'white'}}>Run</Button>
            <br/>
            <br/>
            </div>
