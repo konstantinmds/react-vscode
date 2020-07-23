@@ -7,7 +7,7 @@ const listBoxes: React.FC = (props) => {
        <div style={{fontSize: 20, fontWeight: 900}}>
         <p>Project</p>
        </div>
-       <div style={{display: 'flex', flexDirection: 'row', width:400}}>
+       <div style={{display: 'flex', flexDirection: 'row', width:400, height: 1000}}>
            <ListBoxLeft/>
            <ListBoxLeft/>       
        </div>

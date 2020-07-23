@@ -15,24 +15,24 @@ import ListBoxes from './components/ListBoxes/ListBoxes';
 class App extends React.Component {
   public render() {
         return (
-          <Container fluid> 
+          <Grid fluid> 
           <header><Toolbar /></header>
             <Row> 
-              <Col xs={4}>
+              <Col md={4}>
               <FormRun />
               <RunButtons/>
               <br/>
               <Tabs/>
               </Col>
-              <Col xs={8}>
+              <Col md={8}>
               <TextInput/>
-              <Col xs={8}>
+              <Col md={8} style={{height:800, overflow:'visible'}}>
               <ListBoxes/>
               </Col>  
               </Col>       
             </Row>
 
-          </Container>  
+          </Grid>  
     );
   }
 }
