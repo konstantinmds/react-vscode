@@ -1,11 +1,34 @@
+'use strict';
 import * as path from 'path';
 import * as vscode from 'vscode';
+// The module 'vscode' contains the VS Code extensibility API
+// Import the module and reference it with the alias vscode in your code below
+
+import { RetrieveDialog } from './retrieve';
+import { SaveDialog } from './save';
+
 
 export function activate(context: vscode.ExtensionContext) {
 
 	context.subscriptions.push(vscode.commands.registerCommand('react-webview.start', () => {
 		ReactPanel.createOrShow(context.extensionPath);
 	}));
+
+	context.subscriptions.push(vscode.commands.registerCommand('extension.ELTretrieveDialog', async() => {
+        // The code you place here will be executed every time your command is executed
+        // Display a message box to the user
+        new RetrieveDialog();   
+
+	}));
+	
+	context.subscriptions.push(vscode.commands.registerCommand('extension.ELTsaveDialog', () => {
+        // The code you place here will be executed every time your command is executed
+        // Display a message box to the user
+        new SaveDialog();       
+
+    }));
+
+
 }
 
 /**

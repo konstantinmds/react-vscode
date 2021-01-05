@@ -3,9 +3,9 @@ import {Form} from 'react-bootstrap';
 
 const listBoxLeft: React.FC = (props) => {
    return (
-     <div style={{width:400, height:1200}}>
-    <Form.Group controlId="exampleForm.ControlSelect2" style={{width:400, height:1200}}>
-    <Form.Control as="select" multiple>
+     <div>
+    <Form.Group controlId="exampleForm.ControlSelect2">
+    <Form.Control as="select" multiple style={{width:400, height:500}}>
       <option>1</option>
       <option>2</option>
       <option>3</option>

@@ -15,7 +15,7 @@ import ListBoxes from './components/ListBoxes/ListBoxes';
 class App extends React.Component {
   public render() {
         return (
-          <Grid fluid> 
+          <Container fluid> 
           <header><Toolbar /></header>
             <Row> 
               <Col md={4}>
@@ -26,13 +26,13 @@ class App extends React.Component {
               </Col>
               <Col md={8}>
               <TextInput/>
-              <Col md={8} style={{height:800, overflow:'visible'}}>
+              <Col md={8}>
               <ListBoxes/>
               </Col>  
               </Col>       
             </Row>
 
-          </Grid>  
+          </Container>  
     );
   }
 }
