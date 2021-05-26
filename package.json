@@ -36,7 +36,7 @@
     "azdata": "^1.0.0",
     "bootstrap": "^4.5.0",
     "browserlist": "^1.0.1",
-    "browserslist": "^4.13.0",
+    "browserslist": "^4.16.5",
     "caniuse-lite": "^1.0.30001105",
     "react": "^16.13.1",
     "react-bootstrap": "^1.2.2",
